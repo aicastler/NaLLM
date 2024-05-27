@@ -206,7 +206,7 @@ async def root(payload: ImportPayload):
         result = ""
 
         llm = OpenAIChat(
-            openai_api_key=api_key, model_name="gpt-3.5-turbo-16k", max_tokens=4000
+            openai_api_key=api_key, model_name="gpt-4o", max_tokens=4000
         )
 
         if not payload.neo4j_schema:
